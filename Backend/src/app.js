@@ -41,6 +41,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   FRONTEND_URL, // allow env frontend if provided
   "https://frontend.bajravijayveerarmytrainingacademy.in",
+  "https://bhumi-frontend-umber.vercel.app"
 ].filter(Boolean);
 
 // CORS config with explicit 403 for unknown origins
