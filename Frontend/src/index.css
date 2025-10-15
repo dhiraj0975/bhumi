@@ -1,0 +1,45 @@
+@import "tailwindcss";
+* {
+  .capitalize-first-letter {
+  text-transform: lowercase !important;      /* sabko chhota karo */
+}
+
+.capitalize-first-letter::first-letter {
+  text-transform: uppercase !important;      /* sirf pehla letter bada karo */
+}
+}
+:root {
+  --bg: #ffffff;
+  --text-color: #111827;
+  --accent: #4f46e5;
+  --secondary-bg: #f3f4f6;
+}
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0%); }
+}
+.animate-slide-in { animation: slide-in 180ms ease-out; }
+
+.dark {
+  --bg: #0f172a;
+  --text-color: #f1f5f9;
+  --accent: #60a5fa;
+  --secondary-bg: #1e293b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideDown {
+  animation: slideDown 0.25s ease-out;
+}
