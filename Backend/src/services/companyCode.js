@@ -7,3 +7,4 @@ function normalize(code) {
   return cc;
 }
 module.exports = { normalize };
+

@@ -16,6 +16,7 @@ const calcItem = (it) => {
   const discRatePerUnit = (rate * toNum(it.discount_per_qty)) / 100;
   const discTotal = discRatePerUnit * qty;
 
+  
   const taxable = amount - discTotal;
   const gst_amount = (taxable * toNum(it.gst_percent)) / 100;
   const final_amount = taxable + gst_amount;

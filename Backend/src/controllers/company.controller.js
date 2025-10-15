@@ -10,6 +10,7 @@ exports.create = async (req, res) => {
   cc = cc.replace(/[^a-z0-9_]+/g, '_');
   // Collapse multiple underscores
   cc = cc.replace(/_+/g, '_');
+  
   // Strip leading/trailing underscores
   cc = cc.replace(/^_+|_+$/g, '');
   if (!cc || !/^[a-z0-9_]+$/.test(cc)) return res.status(400).json({ error: 'invalid code' });

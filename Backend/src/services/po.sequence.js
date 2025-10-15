@@ -10,6 +10,7 @@ async function next(name, { prefix = "PO-", pad = 6 } = {}) {
     "INSERT INTO sequences (name, value) VALUES (?, 0) ON DUPLICATE KEY UPDATE name = name",
     [name]
   );
+  
 
   return new Promise((resolve, reject) => {
     db.beginTransaction(async (err) => {

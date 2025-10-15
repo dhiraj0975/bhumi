@@ -44,6 +44,7 @@ const allowedOrigins = [
   "https://bhumi-frontend-umber.vercel.app"
 ].filter(Boolean);
 
+
 // CORS config with explicit 403 for unknown origins
 const corsOptions = {
   origin: (origin, cb) => {

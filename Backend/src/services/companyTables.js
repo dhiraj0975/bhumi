@@ -12,6 +12,7 @@ async function createCompanyTables(code) {
     `CREATE TABLE IF NOT EXISTS \`${tn(code,'sale_items')}\` LIKE \`tpl_sale_items\``,
     `CREATE TABLE IF NOT EXISTS \`${tn(code,'sale_payments')}\` LIKE \`tpl_sale_payments\``,
   ];
+  
   for (const q of ddl) await run(q);
 }
 module.exports = { createCompanyTables };
