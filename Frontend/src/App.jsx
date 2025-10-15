@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 import Sidebar from "./components/Layout/Sidebar";
 import Navbar from "./components/Layout/Navbar";
-import LoginPage from "./pages/LoginPage.jsx";
 import { useAuth } from "./contexts/AuthContext";
 import { useCompany } from "./contexts/CompanyContext";
 
@@ -33,6 +32,7 @@ import SalesInvoice from "./components/salesOrders/SalesOrderInvoice.jsx";
 
 import CompaniesPage from "./components/Company/CompaniesPage.jsx";
 import PurchaseForm from "./components/purchase/PurchaseForm.jsx";
+import LoginPage from './Pages/LoginPage';
 
 // Protected shell: Sidebar + Navbar + keyed Outlet
 function AppShell() {
