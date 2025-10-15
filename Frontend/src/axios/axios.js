@@ -4,9 +4,9 @@ import authUtil from "../utils/auth";
 // Base URL: .env me VITE_API_BASE_URL set karo, e.g.
 // VITE_API_BASE_URL=http://localhost:5000/api
 const baseURL =
-  import.meta.env?.VITE_API_BASE_URL ||
-  process.env?.VITE_API_BASE_URL || "https://bhumi-backend.vercel.app/api" ||
-  "http://localhost:5000/api"; 
+  import.meta.env?.VITE_API_BASE_URL ||  "https://bhumi-backend.vercel.app/api"
+  // process.env?.VITE_API_BASE_URL  ||
+  // "http://localhost:5000/api"; 
 
 export const api = axios.create({
   baseURL,
