@@ -38,7 +38,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL || "https://bhumi-frontend-umber.v
 const JSON_LIMIT = process.env.JSON_LIMIT || "2mb";
 
 const allowedOrigins = [
-  "http://localhost:5173",
+  "https://bhumi-frontend-umber.vercel.app",
   FRONTEND_URL, // allow env frontend if provided
   "https://frontend.bajravijayveerarmytrainingacademy.in",
   "https://bhumi-frontend-umber.vercel.app"
